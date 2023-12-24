@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KARTY</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./normalize.css">
+</head>
+
+<body>
+  <page>
+    <div class="page_container">
+      <section class="left_block">
+        <header class="header">
+          <div class="logo">
+            <h1>KARTY</h1>
+          </div>
+          <button class="refresh_button" id="refresh_button" title="Clicking this button will clear the character list">
+            <img class="reload_icon" src="./img/trash-can-10416.svg" />
+          </button>
+        </header>
+        <div class="character_preview_conteiner">
+          <div>
+            <h2 class="TitleText">Preview</h2>
+            <div class="character_preview_t" id="character_preview">
+            <div class="preview_gradient">
+              <h3 id="CharacterNamePreview">Name</h3>
+              <p id="CharacterClassPreview">Class</p>
+            </div>
+          </div>
+          </div>
+          <div>
+            <h2 class="TitleText">Character avatar</h2>
+            <div class="character_input_container">
+              <input type="file" id="character_file_input" class="character_file_input_b" placeholder="Select Character image">
+            </div>
+          </div>
+        </div>
+        <div class="input_container">
+          <div>
+            <p class="input_text">Character name</p>
+            <input type="text" id="characterName" class="input_text_form" maxlength="20" placeholder="Write character name">
+          </div>
+          <div>
+            <p class="input_text">Character Class</p>
+            <input type="text" id="characterClass" class="input_text_form" maxlength="15" placeholder="Write character class">
+          </div>
+        </div>
+        <button id="addButton" class="button_send send_button_text">Press to push</button>
+      </section>
+      <div class="center_line_container">
+        <img src="./img/Line.svg" />
+      </div>
+      <section class="right_block">
+        <div id="container"></div>
+      </section>
+    </div>
+  </page>
+  <script src="./index.js"></script>
+  <script src="./preview.js"></script>
+  <noscript>
+    <META HTTP-EQUIV="Refresh" CONTENT="0;URL=ShowErrorPage.html">
+  </noscript>
+</body>
+
+</html>
+
